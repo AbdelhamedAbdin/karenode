@@ -1,8 +1,8 @@
 // Replace these two values before publishing. WhatsApp: country code + number, digits only.
 const siteSettings = {
-  whatsappNumber: '',
+  whatsappNumber: '201067296316',
   facebookPageName: 'Karenode',
-  facebookPageUrl: ''
+  facebookPageUrl: 'https://www.facebook.com/karen0de'
 };
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('#main-nav');
@@ -24,7 +24,7 @@ if (phone) {
   whatsappLink.href = `https://wa.me/${phone}?text=${message}`;
   whatsappLink.textContent = 'راسلنا على واتساب بيزنس ←';
   whatsappLink.removeAttribute('aria-disabled');
-  document.querySelector('#phone-display').textContent = `+${phone}`;
+  document.querySelector('#phone-display').textContent = `${phone}+`;
   document.querySelector('#footer-phone').textContent = `واتساب بيزنس: +${phone}`;
   document.querySelectorAll('.order-link').forEach(link => {
     const item = link.dataset.product;
